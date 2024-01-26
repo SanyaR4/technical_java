@@ -1,0 +1,104 @@
+1)public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(lastDigit(57, 17));   
+        System.out.println(lastDigit(23, 15));    
+        System.out.println(lastDigit(4, 234));   
+    }
+
+    public static boolean lastDigit(int a, int b) {
+        return (a % 10) == (b % 10);
+    }
+}
+
+
+2)import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        int n1;
+        Scanner scan=new Scanner(System.in);
+        n1=scan.nextInt();
+        System.out.println(isEven(n1));
+    }
+
+    public static boolean isEven(int n) {
+        return n % 2 == 0;
+    }
+}
+3)import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int a1,b1;
+        Scanner scan=new Scanner(System.in);
+        a1=scan.nextInt();
+        b1=scan.nextInt();
+        System.out.println(sumDouble(a1,b1));  
+    }
+
+    public static int sumDouble(int a, int b) {
+        if (a == b) {
+            return 2 * (a + b);
+        } else {
+            return a + b;
+        }
+    }
+}
+4)import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int a1,b1;
+        Scanner scan=new Scanner(System.in);
+        a1=scan.nextInt();
+        b1=scan.nextInt();
+        System.out.println(makes10(a1,b1));  
+    }
+
+    public static boolean makes10(int a, int b) 
+    {
+        return (a == 10 || b == 10) || (a + b == 10);
+    }
+}
+5)import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int a1,b1;
+        Scanner scan=new Scanner(System.in);
+        a1=scan.nextInt();
+        b1=scan.nextInt();
+        System.out.println(in1020(a1,b1));  
+    }
+
+    public static boolean in1020(int a, int b) 
+    {
+        return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
+    }
+}
+
+
+5)import java.util.Scanner;
+public class Main 
+{
+
+    public static void main(String[] args)
+    {
+        int a,b,c;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter three numbers");
+        a=scan.nextInt();
+        b=scan.nextInt();
+        c=scan.nextInt();
+       if(a==b && b==c)
+       System.out.println("Result="+20);
+       else if(a==b && b!=c || a!=b && b==c)
+       System.out.println("Result="+10);
+       else
+       System.out.println("Result="+0);
+    }
+}
